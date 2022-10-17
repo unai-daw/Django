@@ -1,0 +1,26 @@
+<center><h1>Platerak</h1></center>
+
+<center>
+<table border="1" style="border-collapse: separate;
+border-spacing: 5px;
+background: #0000;
+color: #000;
+font-size: 24px;">
+  {% for x in myplaterak %}
+  <tr>
+    <td><a href="updatePlat/{{ x.id }}">{{ x.id }}</a></td></td>
+    <td>{{ x.izena }}</td>
+    <td>{{ x.deskripzioa }}</td>
+    <td>{{ x.prezioa }}</td>
+    <td>{{ x.FechaCreacion }}</td>
+    <td><a href="deletePlat/{{ x.id }}">delete</a></td>
+  </tr>
+  {% endfor %}
+</table>
+
+<p>
+  <a href="addPlat/" style="font-size: 24px;">Añadir Plato</a><br><br>
+
+  <a href="sumaPlat/" style="font-size: 24px;">Calcular precio</a>
+</p>
+</center>

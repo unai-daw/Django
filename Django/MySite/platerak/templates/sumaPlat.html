@@ -1,0 +1,23 @@
+<center><h1>CALCULAR PRECIO DE TU COMIDA</h1></center>
+
+<form action="../calcusumPlat/" method="post" style="width:300px;
+padding:16px;
+border-radius:10px;
+margin:auto;
+background-color:#ccc;">
+    <center>
+  {% csrf_token %} ID PLATOS:<br />
+  <input name="id" />
+  <input name="id2" />
+  <input name="id3" />
+  <div id="contenido"></div>
+  <br /><br />
+  <input type="submit" value="SUMAR PLATO" />
+  <h1 id="total"></h1>
+</form>
+
+<br />
+<p>
+</center>
+  <center>Batuketa {{ precioFin }} da.</center><br><br>
+</p>

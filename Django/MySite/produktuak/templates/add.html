@@ -1,0 +1,19 @@
+<h1>Añadir Producto</h1>
+
+<form action="addrecord/" method="post" style="width:300px;
+padding:16px;
+border-radius:10px;
+margin:auto;
+background-color:#ccc;">
+{% csrf_token %}
+Izena:<br>
+<input name="izena">
+<br><br>
+Prezioa:<br>
+<input name="prezioa">
+<br><br>
+IraungipenData:<br>
+<input name="iraungipenData">
+<br><br>
+<input type="submit" value="Submit">
+</form>

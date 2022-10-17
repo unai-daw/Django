@@ -1,0 +1,24 @@
+<center><h1>AÑADIR PLATO</h1></center>
+
+<center>
+<form action="addrecord/" method="post" style="width:300px;
+padding:16px;
+border-radius:10px;
+margin:auto;
+background-color:#ccc;">
+{% csrf_token %}
+IZENA<br>
+<input name="izena">
+<br><br>
+DESKRIPZIOA<br>
+<input name="deskripzioa">
+<br><br>
+PREZIOA<br>
+<input name="prezioa">
+<br><br>
+SORKETA DATA<br>
+<input name="FechaCreacion" style="">
+<br><br>
+<input type="submit" value="Submit">
+</form>
+</center>

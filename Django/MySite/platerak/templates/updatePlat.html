@@ -1,0 +1,24 @@
+<center><h1>ACTUALIZAR PLATO</h1></center>
+<center>
+<form action="updaterecordPlat/{{ myplaterak.id }}" method="post"
+border="solid" style="width:300px;
+padding:16px;
+border-radius:10px;
+margin:auto;
+background-color:#ccc;">
+{% csrf_token %}
+IZENA:<br>
+<input name="izena" value="{{ myplaterak.izena }}">
+<br><br>
+DESKRIPZIOA:<br>
+<input name="deskripzioa" value="{{ myplaterak.deskripzioa }}">
+<br><br>
+PREZIOA:<br>
+<input name="prezioa" value="{{ myplaterak.prezioa }}">
+<br><br>
+FECHAPRECIO:<br>
+<input name="FechaCreacion" value="{{ myplaterak.FechaCreacion }}">
+<br><br>
+<input type="submit" value="actualizar precio">
+</form>
+</center>

@@ -1,0 +1,40 @@
+<center><h1>CREA TU PIZZA</h1></center>
+<center>
+<form action="../CalcuCreaPizza/" method="post" style="width:300px;
+padding:16px;
+border-radius:10px;
+margin:auto;
+background-color:#ccc;">
+  {% csrf_token %}
+  ID ingrediente 1:<br>
+  <input name="ingre1">
+  <br><br>
+  ID ingrediente 2:<br>
+  <input name="ingre2">
+  <br><br>
+  ID ingrediente 3:<br>
+  <input name="ingre3">
+  <br><br>
+  ID ingrediente 4:<br>
+  <input name="ingre4">
+  <br><br>
+  ID ingrediente 5:<br>
+  <input name="ingre5">
+  <br><br>
+  <input type="submit" value="Submit">
+  </form><br><br>
+  <p>
+  </center>
+    <center>Batuketa {{ precioFin }} da.</center><br><br>
+    <center> Pizza merkeagoak: {{ platos }} <center>
+
+  </p>
+</center>
+
+  
+    
+     
+    
+   
+
+  

@@ -1,0 +1,29 @@
+
+<hedad>
+  <link rel="stylesheet" type="text/css" href="css/produ.css" title="style">
+</head>
+<center><h1>Produktuak</h1></center>
+
+<center>
+<table border="1" style="border-collapse: separate;
+border-spacing: 5px;
+background: #0000;
+color: #000;
+font-size: 24px;">
+  {% for x in myproduktuak %}
+  <tr>
+    <td><a href="update/{{ x.id }}">{{ x.id }}</a></td>
+    <td>{{ x.izena }}</td>
+    <td>{{ x.prezioa }}</td>
+    <td>{{ x.iraungipenData }}</td>
+    <td><a href="delete/{{ x.id }}">delete</a></td>
+  </tr>
+  {% endfor %}
+</table>
+
+
+<p>
+  <a href="add/" style="font-size: 24px;">Añadir Producto</a><br>
+  <a href="creaPizza/" style="font-size: 24px;">crear Pizza</a>
+</p>
+</center>
